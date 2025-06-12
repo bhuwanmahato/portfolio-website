@@ -11,8 +11,6 @@ export const DATA = {
     "Product Designer. I love building things and helping people. Very active on Twitter.",
   summary:
     "I'm currently pursuing M.Des at [IIT Guwahati](/#education). In the past, I’ve worked at [Wipro as an SDE](/#work) and worked on a lot of projects, including [Themefy (10$ MRR)](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf).",
-  message:
-    "Currently, building [CAPES.APP](https://capes.app/) and [Zenboxx](https://zenboxx.app) as a Design Engineer.",
   avatarUrl: "/me.jpg",
   skills: [
     "Figma",
@@ -88,7 +86,7 @@ export const DATA = {
     {
       company: "Alleviate Networks",
       badges: [],
-      href: "https://shopify.com",
+      href: "",
       location: "Remote",
       title: "Web Developer and Designer",
       logoUrl: "/alleviate.png",
@@ -176,7 +174,7 @@ export const DATA = {
     },
     {
       title: "CAPES.APP",
-      href: "https://capes.app",
+      href: "/projects/capes.app",
       dates: "March 2025 - ongoing",
       active: true,
       description:
@@ -207,18 +205,7 @@ export const DATA = {
       description:
         "A community based group consultation and treatment application which allows users to book group consultations with doctors and specialists.",
       technologies: ["Figma", "Illustrator"],
-      // links: [
-      //   {
-      //     type: "Website",
-      //     href: "https://llm.report",
-      //     icon: <Icons.globe className="size-3" />,
-      //   },
-      //   {
-      //     type: "Source",
-      //     href: "https://github.com/dillionverma/llm.report",
-      //     icon: <Icons.github className="size-3" />,
-      //   },
-      // ],
+      links: [],
       image: "/movetogether.jpg",
       video: "", //"https://cdn.llm.report/openai-demo.mp4",
     },

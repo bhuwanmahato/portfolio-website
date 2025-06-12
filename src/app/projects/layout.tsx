@@ -6,7 +6,7 @@ export default function ProjectLayout({
   return (
     <div className="min-h-screen bg-background">
       {/* <Navbar /> */}
-      <main className="container mx-auto">{children}</main>
+      <main className="px-4">{children}</main>
     </div>
   );
 }
