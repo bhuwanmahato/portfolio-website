@@ -77,8 +77,8 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I've worked on a variety of projects, here are a few of my
-                  favorites.
+                  I&apos;ve worked on a variety of projects, here are a few of
+                  my favorites.
                 </p>
               </div>
             </div>
@@ -205,8 +205,8 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-base/relaxed">
-                If you'd like to collaborate, discuss, debate or just say hi?
-                Just shoot me a dm{" "}
+                If you&apos;d like to collaborate, discuss, debate or just say
+                hi? Just shoot me a dm{" "}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
