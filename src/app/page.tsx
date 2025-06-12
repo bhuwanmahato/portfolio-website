@@ -50,7 +50,7 @@ export default function Page() {
           </Markdown>
 
           <p className=" md:text-base/relaxed pt-4">
-            "Currently, building{" "}
+            Currently, building{" "}
             <Link
               href="https://capes.app"
               className="underline font-bold text-orange-500"
@@ -64,7 +64,7 @@ export default function Page() {
             >
               Zenbox
             </Link>
-            , as a Design Engineer."
+            , as a Design Engineer.
           </p>
         </BlurFade>
       </section>
