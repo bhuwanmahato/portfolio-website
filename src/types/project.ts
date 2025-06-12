@@ -12,8 +12,8 @@ export interface Project {
   dates: string;
   active: boolean;
   description: string;
-  technologies: string[];
-  links?: ProjectLink[];
+  technologies: readonly string[];
+  links?: readonly ProjectLink[];
   image?: string;
   video?: string;
 }
