@@ -171,32 +171,32 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 <img src="/zenbox/6.jpg" alt="Research 4" className="w-full " />
 
                 {/* Horizontal Scroll Gallery */}
-                <div className="overflow-hidden">
-                  <div className="flex gap-6 animate-scroll">
+                <div className="overflow-hidden bg-[#f5f9ff] p-8">
+                  <div className="flex gap-6 animate-scroll-right">
                     <img
                       src="/zenbox/C1.png"
                       alt="Competitor 1"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/C2.png"
                       alt="Competitor 2"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/C3.png"
                       alt="Competitor 3"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/C4.png"
                       alt="Competitor 4"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/C5.png"
                       alt="Competitor 5"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                   </div>
                 </div>
@@ -259,68 +259,101 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 />
 
                 {/* Design Gallery - Right Scroll */}
-                <div className="  p-8  overflow-hidden">
+                <div className="  p-8  overflow-hidden bg-white">
                   <div className="flex gap-6 animate-scroll-right">
                     <img
                       src="/zenbox/D1.png"
                       alt="Design 1"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-80 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/D2.png"
                       alt="Design 2"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-80 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/D3.png"
                       alt="Design 3"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-80 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/D4.png"
                       alt="Design 4"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-80 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/D5.png"
                       alt="Design 5"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-80 w-auto   flex-shrink-0"
                     />
                   </div>
                 </div>
 
                 {/* Prototype Gallery - Left Scroll */}
-                <div className="  p-8  overflow-hidden">
+                <div className="  p-8  overflow-hidden bg-white">
                   <div className="flex gap-6 animate-scroll-left">
+                    {/* originals */}
                     <img
                       src="/zenbox/P1.png"
                       alt="Prototype 1"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/P2.png"
                       alt="Prototype 2"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/P3.png"
                       alt="Prototype 3"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/P4.png"
                       alt="Prototype 4"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/P5.png"
                       alt="Prototype 5"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                     <img
                       src="/zenbox/P6.png"
                       alt="Prototype 6"
-                      className="h-64 w-auto  shadow-md flex-shrink-0"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+
+                    {/* dublicate set */}
+                    <img
+                      src="/zenbox/P1.png"
+                      alt="Prototype 1"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+                    <img
+                      src="/zenbox/P2.png"
+                      alt="Prototype 2"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+                    <img
+                      src="/zenbox/P3.png"
+                      alt="Prototype 3"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+                    <img
+                      src="/zenbox/P4.png"
+                      alt="Prototype 4"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+                    <img
+                      src="/zenbox/P5.png"
+                      alt="Prototype 5"
+                      className="h-96 w-auto   flex-shrink-0"
+                    />
+                    <img
+                      src="/zenbox/P6.png"
+                      alt="Prototype 6"
+                      className="h-96 w-auto   flex-shrink-0"
                     />
                   </div>
                 </div>
@@ -459,7 +492,19 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
         )}
 
         <style jsx>{`
-          @keyframes scroll {
+          .animate-scroll-left {
+            display: flex;
+            animation: scroll-left 30s linear infinite;
+            width: fit-content;
+          }
+
+          .animate-scroll-right {
+            display: flex;
+            animation: scroll-right 25s linear infinite;
+            width: fit-content;
+          }
+
+          @keyframes scroll-left {
             0% {
               transform: translateX(0);
             }
@@ -477,26 +522,7 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
             }
           }
 
-          @keyframes scroll-left {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-
-          .animate-scroll {
-            animation: scroll 20s linear infinite;
-          }
-
-          .animate-scroll-right {
-            animation: scroll-right 25s linear infinite;
-          }
-
-          .animate-scroll-left {
-            animation: scroll-left 30s linear infinite;
-          }
+          /* Add fade mask for smooth edges */
         `}</style>
       </div>
     </ProjectLayout>
