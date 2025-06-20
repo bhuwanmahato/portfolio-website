@@ -33,17 +33,17 @@ export const DATA = {
     email: "bhuwan8501@gmail.com",
     tel: "+917632914019",
     social: {
+      X: {
+        name: "X",
+        url: "https://x.com/bhuwan_maha",
+        icon: Icons.x,
+
+        navbar: true,
+      },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/m-bhuwan/",
         icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/bhuwan8501",
-        icon: Icons.x,
 
         navbar: true,
       },

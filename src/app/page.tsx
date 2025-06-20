@@ -13,7 +13,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 py-12 sm:py-24 px-6 max-w-4xl mx-auto">
-      <section id="hero">
+      <section id="hero" className="flex flex-col gap-y-12">
         <div className="mx-auto w-full max-w-4xl space-y-8">
           <div className="gap-8 flex  justify-between">
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -37,52 +37,52 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-sm font-bold pb-2 text-muted-foreground">
-            ABOUT
-          </h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-
-          <p className=" md:text-base/relaxed pt-4">
-            Currently, building{" "}
-            <Link
-              href="https://capes.app"
-              className="underline font-bold text-orange-500"
-            >
-              CAPES.APP
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="https://zenboxx.app"
-              className="underline font-bold text-orange-500"
-            >
-              Zenbox
-            </Link>
-            , as a Design Engineer.
-          </p>
-        </BlurFade>
-      </section>
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+        <section id="about">
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <h2 className="text-sm font-bold pb-2 text-muted-foreground">
-              SKILLS AND TOOLS
+              ABOUT
             </h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-2">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
+              {DATA.summary}
+            </Markdown>
+
+            <p className=" md:text-base/relaxed pt-4">
+              Currently, building{" "}
+              <Link
+                href="https://capes.app"
+                className="underline font-bold text-orange-500"
+              >
+                CAPES.APP
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="https://zenboxx.app"
+                className="underline font-bold text-orange-500"
+              >
+                Zenbox
+              </Link>
+              , as a Design Engineer.
+            </p>
+          </BlurFade>
+        </section>
+        <section id="skills">
+          <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-sm font-bold pb-2 text-muted-foreground">
+                SKILLS AND TOOLS
+              </h2>
+            </BlurFade>
+            <div className="flex flex-wrap gap-2">
+              {DATA.skills.map((skill: string, id) => (
+                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                  <Badge key={skill}>{skill}</Badge>
+                </BlurFade>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
