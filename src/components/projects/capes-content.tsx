@@ -41,7 +41,7 @@ export function CapesContent({ project }: CapesContentProps) {
   };
   return (
     <ProjectLayout project={project}>
-      <div className="min-h-screen pl-12">
+      <div className="min-h-screen md:pl-12">
         {/* Progress Bar */}
         <div className="fixed top-0 left-0 w-full h-1">
           <div
@@ -51,7 +51,7 @@ export function CapesContent({ project }: CapesContentProps) {
         </div>
         <div className="flex flex-row">
           {/* Side Navigation */}
-          <nav className="fixed left-0 top-0 h-full w-80 overflow-y-auto z-40 border-r">
+          <nav className="hidden md:block fixed left-0 top-0 h-full w-80 overflow-y-auto z-40 border-r">
             <div className="p-6">
               <ul className="space-y-2">
                 <li>
@@ -149,7 +149,7 @@ export function CapesContent({ project }: CapesContentProps) {
           </nav>
 
           {/* Main Content */}
-          <main className="ml-64 min-h-screen">
+          <main className="md:ml-64 min-h-screen">
             {/* Hero Section */}
             {/* <section id="home" className="relative">
               <div className="w-full h-screen relative flex items-center justify-center text-center">
@@ -184,7 +184,7 @@ export function CapesContent({ project }: CapesContentProps) {
                       className="text-left transition-colors"
                       variant={"default"}
                     >
-                      Get Started <ArrowRight size={16} className="ml-2" />
+                      Check out Capes <ArrowRight size={16} className="ml-2" />
                     </Button>
                   </a>
                 </div>
@@ -197,7 +197,7 @@ export function CapesContent({ project }: CapesContentProps) {
         {showScrollTop && (
           <button
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full  hover:bg-blue-700 transition-colors z-50"
+            className="hidden md:block fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full  hover:bg-blue-700 transition-colors z-50"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} />

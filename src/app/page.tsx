@@ -12,12 +12,12 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 py-12 sm:py-24 px-6 max-w-4xl mx-auto">
-      <section id="hero" className="flex flex-col gap-y-12">
+    <main className="flex flex-col min-h-[100dvh] space-y-4 md:space-y-10 py-12 sm:py-24 px-6 max-w-4xl mx-auto">
+      <section id="hero" className="flex flex-col gap-y-6 md:gap-y-12">
         <div className="mx-auto w-full max-w-4xl space-y-8">
-          <div className="gap-8 flex  justify-between">
+          <div className="gap-8 flex flex-col md:flex-row  justify-between items-center">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-20 md:size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -25,12 +25,12 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className=" text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] text-sm md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -39,16 +39,16 @@ export default function Page() {
         </div>
         <section id="about">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-sm font-bold pb-2 text-muted-foreground">
+            <h2 className="text-xs md:text-sm font-bold pb-2 text-muted-foreground">
               ABOUT
             </h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
-            <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
+            <Markdown className="prose max-w-full text-pretty font-sans text-sm md:text-base text-muted-foreground dark:prose-invert">
               {DATA.summary}
             </Markdown>
 
-            <p className=" md:text-base/relaxed pt-4">
+            <p className="text-sm md:text-base/relaxed pt-4">
               Currently, building{" "}
               <Link
                 href="https://capes.app"
@@ -70,11 +70,11 @@ export default function Page() {
         <section id="skills">
           <div className="flex min-h-0 flex-col gap-y-3">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <h2 className="text-sm font-bold pb-2 text-muted-foreground">
+              <h2 className="text-xs md:text-sm font-bold md:pb-2 text-muted-foreground">
                 SKILLS AND TOOLS
               </h2>
             </BlurFade>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1 md:gap-2">
               {DATA.skills.map((skill: string, id) => (
                 <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                   <Badge key={skill}>{skill}</Badge>
@@ -85,14 +85,14 @@ export default function Page() {
         </section>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-4 md:space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <div className="space-y-2 md:space-y-4">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl">
                   Portfolio
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground text-sm md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, here are few of my
                   favorites.
                 </p>
@@ -218,10 +218,10 @@ export default function Page() {
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-base/relaxed">
+              <p className="mx-auto max-w-[600px] text-sm text-muted-foreground md:text-base/relaxed">
                 If you&apos;d like to collaborate, discuss, debate or just say
                 hi? Just shoot me a dm{" "}
                 <Link

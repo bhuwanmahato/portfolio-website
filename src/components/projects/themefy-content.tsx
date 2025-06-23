@@ -2,7 +2,7 @@
 import { Project } from "@/types/project";
 import { ProjectLayout } from "./project-layout";
 import React, { useState, useEffect, ReactNode } from "react";
-import { ArrowLeft, ArrowUp, Rocket } from "lucide-react";
+import { ArrowLeft, ArrowUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -54,7 +54,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
   );
   return (
     <ProjectLayout project={project}>
-      <div className="min-h-screen pl-12">
+      <div className="min-h-screen md:pl-12">
         {/* Progress Bar */}
         <div className="fixed top-0 left-0 w-full h-1">
           <div
@@ -64,7 +64,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
         </div>
         <div className="flex flex-row">
           {/* Side Navigation */}
-          <nav className="fixed left-0 top-0 h-full w-80 overflow-y-auto z-40 border-r">
+          <nav className="hidden md:block fixed left-0 top-0 h-full w-80 overflow-y-auto z-40 border-r">
             <div className="p-6">
               <ul className="space-y-2">
                 <li>
@@ -99,7 +99,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
                     </div>
                   </div>
                   <div className="flex gap-4 pb-4">
-                    <CTAButton>Try Themefy</CTAButton>
+                    <CTAButton className="text-sm">Try Themefy</CTAButton>
                   </div>
                 </li>
 
@@ -146,7 +146,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
           </nav>
 
           {/* Main Content */}
-          <main className="ml-64 min-h-screen">
+          <main className="md:ml-64 min-h-screen">
             {/* Hero Section */}
             <section id="home" className="relative">
               {/* Creative Coding Hero */}
@@ -159,7 +159,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                 />
-                <h2 className="relative z-10 text-4xl md:text-5xl font-bold text-gray-900 max-w-4xl px-8">
+                <h2 className="relative z-10 text-2xl md:text-5xl font-bold text-gray-900 max-w-4xl px-8">
                   Bringing creative coding to everyday browsing
                 </h2>
               </div>
@@ -167,10 +167,10 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
               {/* CTA Section */}
               <div className="bg-gray-100 py-16 text-center">
                 <div className="max-w-4xl mx-auto px-8">
-                  <p className="text-xl text-gray-700 mb-6">
+                  <p className="text-sm md:text-xl text-gray-700 mb-6">
                     Product Design & Development
                   </p>
-                  <CTAButton>Try Themefy</CTAButton>
+                  <CTAButton className="text-sm">Try Themefy</CTAButton>
                 </div>
               </div>
             </section>
@@ -272,13 +272,14 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
 
                 {/* Video Section */}
                 <div className="text-center py-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-4">
                     Check out the quick walkthrough video!!
                   </h3>
                   <div className="space-y-4 text-gray-700">
-                    <p>Note: This is the latest version of Themefy</p>
-                    <p>Get a new browser experience!! Try Themefy now</p>
-                    <CTAButton>Try Themefy</CTAButton>
+                    <p className="text-sm md:text-base">
+                      Note: This is the latest version of Themefy
+                    </p>
+                    <CTAButton className="text-sm">Try Themefy</CTAButton>
                   </div>
                 </div>
 
@@ -336,7 +337,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
 
                 {/* Final CTA */}
                 <div className="text-center py-8">
-                  <CTAButton>Try Themefy</CTAButton>
+                  <CTAButton className="text-sm">Try Themefy</CTAButton>
                 </div>
 
                 <img
@@ -353,7 +354,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
         {showScrollTop && (
           <button
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full  hover:bg-blue-700 transition-colors z-50"
+            className="hidden md:block fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full  hover:bg-blue-700 transition-colors z-50"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} />
