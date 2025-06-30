@@ -58,7 +58,7 @@ export default function Page() {
               </Link>{" "}
               and{" "}
               <Link
-                href="https://zenboxx.app"
+                href="https://zennbox.app"
                 className="underline font-bold text-orange-500"
               >
                 Zenbox

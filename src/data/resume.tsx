@@ -134,7 +134,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://zenboxx.app",
+          href: "https://zennbox.app",
           icon: <Icons.globe className="size-3" />,
         },
       ],
