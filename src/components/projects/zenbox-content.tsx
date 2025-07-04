@@ -65,9 +65,9 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 </li>
 
                 <li className="pt-4">
-                  <h3 className="text-xl font-bold mb-3">Zenbox</h3>
+                  <h3 className="text-xl font-bold mb-3">Zennbox</h3>
                   <p className=" text-sm leading-relaxed">
-                    Zenbox is a cross-platform tool for storing and organizing
+                    Zennbox is a cross-platform tool for storing and organizing
                     resources efficiently with advanced note-taking features,
                     designed to boost productivity and foster a focused,
                     efficient learning experience.

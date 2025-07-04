@@ -61,7 +61,7 @@ export default function Page() {
                 href="https://zennbox.app"
                 className="underline font-bold text-orange-500"
               >
-                Zenbox
+                Zennbox
               </Link>
               , as a Design Engineer.
             </p>

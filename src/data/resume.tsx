@@ -117,7 +117,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Zenbox",
+      title: "Zennbox",
       href: "/projects/zenbox",
       dates: "Jul 2024 - Aug 2024",
       active: true,
