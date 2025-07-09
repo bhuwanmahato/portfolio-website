@@ -92,7 +92,7 @@ export default function Page() {
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl">
                   Portfolio
                 </h2>
-                <p className="text-muted-foreground text-sm md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground text-base lg:text-base/relaxed ">
                   I&apos;ve worked on a variety of projects, here are few of my
                   favorites.
                 </p>

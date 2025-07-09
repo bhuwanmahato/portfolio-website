@@ -22,7 +22,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   // Render specific content component based on project
-  if (project.title.toLowerCase() === "zenbox") {
+  if (project.title.toLowerCase() === "zennbox") {
     return <ZenboxContent project={project} />;
   }
   if (project.title.toLowerCase() === "themefy") {
