@@ -8,7 +8,11 @@ const nextConfig = {
         headers: [
           {
             key: "Access-Control-Allow-Origin",
-            value: "*", // Allow all origins
+            value: "chrome-extension://lhefnnndgedibockdpbjhgobjlnenmcc",
+          },
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "chrome-extension://pnooehjmfoolleebkoboieekgfgbhjmf",
           },
           {
             key: "Access-Control-Allow-Methods",
@@ -16,7 +20,7 @@ const nextConfig = {
           },
           {
             key: "Access-Control-Allow-Headers",
-            value: "*",
+            value: "Content-Type",
           },
         ],
       },
