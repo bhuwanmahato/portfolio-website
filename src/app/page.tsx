@@ -49,7 +49,7 @@ export default function Page() {
             </Markdown>
 
             <p className="text-sm md:text-base/relaxed pt-4">
-              Today, as a full-time Design Engineer, I'm building{" "}
+              Today, as a full-time Design Engineer, I&apos;m building{" "}
               <Link
                 href="https://capes.app"
                 className="underline font-bold text-orange-500"
