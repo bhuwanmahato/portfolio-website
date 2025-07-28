@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Product Designer. I love building things and helping people. Very active on Twitter.",
   summary:
-    "I'm currently pursuing M.Des at [IIT Guwahati](/#education). In the past, I’ve worked at [Wipro as an SDE](/#work) and worked on a lot of projects, including [Themefy (10$ MRR)](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf).",
+    "I started my career as a [Software Engineer at Wipro](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
   avatarUrl: "/me.jpg",
   skills: [
     "Figma",
