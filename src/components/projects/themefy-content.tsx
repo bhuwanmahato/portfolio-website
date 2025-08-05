@@ -78,7 +78,7 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
                 </li>
 
                 <li className="pt-4">
-                  <h3 className="text-xl font-bold mb-3">Themefy</h3>
+                  <h3 className="text-xl font-bold mb-2">Themefy</h3>
                   <div className=" text-sm leading-relaxed">
                     <p>
                       Themefy is my attempt to spread awareness and spark
@@ -86,7 +86,19 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
                     </p>
                     <p>Get a whole new browsing experience!! Try Themefy now</p>
                   </div>
-                  <div className="flex flex-col gap-2 py-4">
+                  <div className="flex flex-col gap-2 py-2">
+                    <p className="text-xs text-muted-foreground font-semibold">
+                      ROLE
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.role.map((role: string) => (
+                        <Badge key={role} variant="secondary">
+                          {role}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-2 py-2">
                     <p className="text-xs text-muted-foreground font-semibold">
                       TOOLS
                     </p>

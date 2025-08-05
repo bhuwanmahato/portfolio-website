@@ -16,4 +16,5 @@ export interface Project {
   links?: readonly ProjectLink[];
   image?: string;
   video?: string;
+  role: readonly string[];
 }

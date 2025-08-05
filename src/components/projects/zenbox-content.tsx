@@ -53,7 +53,7 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
           {/* Side Navigation */}
           <nav className="hidden md:block fixed left-0 top-0 h-full w-80 overflow-y-auto z-40 border-r">
             <div className="p-6">
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 <li>
                   <a
                     href="/"
@@ -65,7 +65,7 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 </li>
 
                 <li className="pt-4">
-                  <h3 className="text-xl font-bold mb-3">Zennbox</h3>
+                  <h3 className="text-xl font-bold mb-2">Zennbox</h3>
                   <p className=" text-sm leading-relaxed">
                     Zennbox is a cross-platform tool for storing and organizing
                     resources efficiently with advanced note-taking features,
@@ -73,7 +73,19 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                     efficient learning experience.
                   </p>
                 </li>
-                <div className="flex flex-col gap-2 py-4">
+                <div className="flex flex-col gap-2 py-2">
+                  <p className="text-xs text-muted-foreground font-semibold">
+                    ROLE
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.role.map((role: string) => (
+                      <Badge key={role} variant="secondary">
+                        {role}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 py-2">
                   <p className="text-xs text-muted-foreground font-semibold">
                     TOOLS
                   </p>

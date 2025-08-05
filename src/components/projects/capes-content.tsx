@@ -65,7 +65,7 @@ export function CapesContent({ project }: CapesContentProps) {
                 </li>
 
                 <li className="pt-4">
-                  <h3 className="text-xl font-bold mb-3">CAPES.APP</h3>
+                  <h3 className="text-xl font-bold mb-2">CAPES.APP</h3>
                   <div className="text-sm leading-relaxed">
                     <p>
                       Capes as a SaaS platform that helps creators and experts
@@ -76,7 +76,19 @@ export function CapesContent({ project }: CapesContentProps) {
                     </p>
                   </div>
                 </li>
-                <div className="flex flex-col gap-2 py-4">
+                <div className="flex flex-col gap-2 py-2">
+                  <p className="text-xs text-muted-foreground font-semibold">
+                    ROLE
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.role.map((role: string) => (
+                      <Badge key={role} variant="secondary">
+                        {role}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 py-2">
                   <p className="text-xs text-muted-foreground font-semibold">
                     TOOLS
                   </p>
@@ -169,6 +181,17 @@ export function CapesContent({ project }: CapesContentProps) {
                   src="/capes.jpg"
                   alt="Zenbox Context 1"
                   className="w-full "
+                />
+              </div>
+              {/* YouTube Video */}
+              <div className="overflow-hidden ">
+                <iframe
+                  src="https://www.youtube.com/embed/xs0fJsYdMJc?si=gTtOnfIj1qAybF60"
+                  className="w-full aspect-video"
+                  frameBorder="0"
+                  allow="autoplay; picture-in-picture"
+                  allowFullScreen
+                  title="Themefy Walkthrough Video"
                 />
               </div>
               {/* CTA Section */}

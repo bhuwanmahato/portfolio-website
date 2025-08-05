@@ -131,6 +131,7 @@ export const DATA = {
         "Shadcn UI",
         "Supabase",
       ],
+      role: ["UX Research", "UX/UI Design", "Product Development"],
       links: [
         {
           type: "Website",
@@ -157,6 +158,7 @@ export const DATA = {
         "TailwindCSS",
         "P5.js",
       ],
+      role: ["UX/UI Design", "Product Development"],
       links: [
         {
           type: "Web Store",
@@ -186,6 +188,7 @@ export const DATA = {
         "TailwindCSS",
         "Shadcn UI",
       ],
+      role: ["UX Research", "UX/UI Design", "Product Development"],
       links: [
         {
           type: "Website",
@@ -205,6 +208,7 @@ export const DATA = {
       description:
         "A community based group consultation and treatment application which allows users to book group consultations with doctors and specialists.",
       technologies: ["Figma", "Illustrator"],
+      role: ["UX Research", "UX/UI Design"],
       links: [],
       image: "/movetogether.jpg",
       video: "", //"https://cdn.llm.report/openai-demo.mp4",
