@@ -168,10 +168,10 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 />
                 {/* Video Section */}
                 <div className="text-center py-8">
-                  <h3 className="text-lg md:text-2xl font-bold text-gray-900">
+                  <h3 className="text-lg md:text-2xl font-bold text-foreground mb-1">
                     Check out the quick demo video!!
                   </h3>
-                  <div className="space-y-4 text-gray-700">
+                  <div className="space-y-4 text-muted-foreground">
                     <p className="text-sm md:text-base">
                       Note: This is the current beta version of Zennbox. Some of
                       the features in the case study may not be available in the
