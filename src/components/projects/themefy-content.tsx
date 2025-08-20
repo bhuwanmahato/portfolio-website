@@ -187,6 +187,18 @@ export function ThemefyContent({ project }: ThemefyContentProps) {
               </div>
             </section>
 
+            {/* YouTube Video */}
+            <div className="overflow-hidden ">
+              <iframe
+                src="https://www.youtube.com/embed/IQoendFwPkE?si=sFkTpzb8SOw4QjB6&autoplay=0&loop=1&playlist=IQoendFwPkE"
+                className="w-full aspect-video"
+                frameBorder="0"
+                allow="autoplay; picture-in-picture"
+                allowFullScreen
+                title="Themefy Walkthrough Video"
+              />
+            </div>
+
             {/* Idea Section */}
             <section id="problem" className="">
               <div className="max-w-6xl mx-auto">

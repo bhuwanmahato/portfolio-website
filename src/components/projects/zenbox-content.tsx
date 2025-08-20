@@ -166,6 +166,40 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                   alt="Zenbox Context 1"
                   className="w-full "
                 />
+                {/* Video Section */}
+                <div className="text-center py-8">
+                  <h3 className="text-lg md:text-2xl font-bold text-gray-900">
+                    Check out the quick demo video!!
+                  </h3>
+                  <div className="space-y-4 text-gray-700">
+                    <p className="text-sm md:text-base">
+                      Note: This is the current beta version of Zennbox. Some of
+                      the features in the case study may not be available in the
+                      current version.
+                    </p>
+                    <a
+                      href="https://zennbox.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="text-sm my-3 h-12 px-6">
+                        Try Zennbox
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+
+                {/* YouTube Video */}
+                <div className="overflow-hidden ">
+                  <iframe
+                    src="https://www.youtube.com/embed/k_Efw4aj0Nk?si=9SZxuo7y3BHRl8aT"
+                    className="w-full aspect-video"
+                    frameBorder="0"
+                    allow="autoplay; picture-in-picture"
+                    allowFullScreen
+                    title="Themefy Walkthrough Video"
+                  />
+                </div>
                 <img
                   src="/zenbox/2.jpg"
                   alt="Zenbox Context 2"
