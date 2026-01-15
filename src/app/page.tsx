@@ -49,19 +49,27 @@ export default function Page() {
             </Markdown>
 
             <p className="text-sm md:text-base/relaxed pt-4">
-              Today, as a full-time Design Engineer, I&apos;m building{" "}
+              Currently, I&apos;m a full time research scholar at IIT Guwahati
+              and also working on various cool projects and startups, including{" "}
               <Link
-                href="https://capes.app"
+                href="https://navxenergy.com/"
                 className="underline font-bold text-orange-500"
               >
-                CAPES.APP
-              </Link>{" "}
-              and{" "}
+                NavX Energy Pvt. Ltd.
+              </Link>
+              ,{" "}
               <Link
                 href="https://zennbox.app"
                 className="underline font-bold text-orange-500"
               >
                 Zennbox
+              </Link>
+              , and{" "}
+              <Link
+                href="https://capes.app"
+                className="underline font-bold text-orange-500"
+              >
+                CAPES.APP
               </Link>
             </p>
           </BlurFade>

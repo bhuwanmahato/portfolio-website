@@ -8,14 +8,15 @@ export const DATA = {
   location: "IIT Guwahati, India",
   locationLink: "https://maps.app.goo.gl/WynXe4XtxaNE9gJV8",
   description:
-    "Product Designer. I love building things and helping people. Very active on Twitter.",
+    "Researcher and Product Designer. I love building things and helping people.",
   summary:
     "I started my career as a [Software Engineer at Wipro](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
   avatarUrl: "/me.jpg",
   skills: [
     "Figma",
     "Adobe Illustrator",
-    "Adobe Photoshop",
+    "Design Research",
+    "Vibe-Coding",
     "HTML-CSS",
     "JavaScript",
     "React",
@@ -72,6 +73,29 @@ export const DATA = {
 
   work: [
     {
+      company: "Indian Institute of Technology, Guwahati",
+      href: "https://iitg.ac.in",
+      badges: [],
+      location: "Guwahati, Assam",
+      title: "Research Scholar",
+      logoUrl: "/iitg.png",
+      start: "Jan 2026",
+      end: "Present",
+      description: "",
+    },
+    {
+      company: "Dashverse India",
+      href: "https://dashverse.ai",
+      badges: [],
+      location: "Bengaluru, Karnataka",
+      title: "Product Designer",
+      logoUrl: "https://content.dashtoon.ai/assets/dashverse/nav-dv-logo.png",
+      start: "Sep 2025",
+      end: "Dec 2025",
+      description:
+        "Part of the core product team of Frameo.ai at Dashverse: Responsible for conceptualizing and designing key User flows, User Research, competitive analysis, and designing UI screens. I was also part of the growth team and overseeing multiple landing pages design and development.",
+    },
+    {
       company: "Wipro Limited",
       href: "https://atomic.finance",
       badges: [],
@@ -122,7 +146,7 @@ export const DATA = {
       dates: "Jul 2024 - Aug 2024",
       active: true,
       description:
-        "Digital resources management platform with advanced note taking feature for enhanced learning experience.",
+        "AI powered digital resources management platform with advanced note taking feature for enhanced learning experience.",
       technologies: [
         "Figma",
         "Illustrator",
@@ -139,7 +163,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/zenbox.jpg",
+      image:
+        "https://res.cloudinary.com/dumzwlckn/image/upload/v1768471881/zennbox_enqpaa.webp",
       video: "",
     },
     {
