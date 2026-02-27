@@ -15,7 +15,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-4 md:space-y-10 py-12 sm:py-24 px-6 max-w-4xl mx-auto">
       <section id="hero" className="flex flex-col gap-y-6 md:gap-y-12">
         <div className="mx-auto w-full max-w-4xl space-y-8">
-          <div className="gap-8 flex flex-col md:flex-row  justify-between items-center">
+          <div className="gap-8 flex flex-col md:flex-row  justify-between md:items-center">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-20 md:size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />

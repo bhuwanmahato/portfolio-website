@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name}`,
     locale: "en_US",
     type: "website",
+    // images: [
+    //   {
+    //     url: DATA.avatarUrl,
+    //     width: 800,
+    //     height: 800,
+    //     alt: DATA.name,
+    //   },
+    // ],
   },
   robots: {
     index: true,
@@ -42,6 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     title: `${DATA.name}`,
     card: "summary_large_image",
+    // images: [DATA.avatarUrl],
   },
   verification: {
     google: "",
@@ -62,7 +71,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
