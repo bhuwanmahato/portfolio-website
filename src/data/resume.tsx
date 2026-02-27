@@ -10,8 +10,8 @@ export const DATA = {
   description:
     "Researcher and Product Designer. I love building things and helping people.",
   summary:
-    "I started my career as a [Software Engineer at Wipro](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
-  avatarUrl: "/me.jpg",
+    "I started my career as a [Software Developer](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
+  avatarUrl: "/me.webp",
   skills: [
     "Figma",
     "Adobe Illustrator",
@@ -84,8 +84,19 @@ export const DATA = {
       description: "",
     },
     {
+      company: "NavX Energy Private Limited",
+      href: "https://navxenergy.com/",
+      badges: [],
+      location: "Guwahati, Assam",
+      title: "Co-Founder",
+      logoUrl: "/navxLogo.svg",
+      start: "Jan 2026",
+      end: "Present",
+      description: "",
+    },
+    {
       company: "Dashverse India",
-      href: "https://dashverse.ai",
+      href: "https://dashverse.ai/",
       badges: [],
       location: "Bengaluru, Karnataka",
       title: "Product Designer",
@@ -143,22 +154,22 @@ export const DATA = {
     {
       title: "Zennbox",
       href: "/projects/zennbox",
-      dates: "Jul 2024 - Aug 2024",
+      dates: "Jul 2025 - Present",
       active: true,
       description:
-        "AI powered digital resources management platform with advanced note taking feature for enhanced learning experience.",
+        "AI powered digital resources management and notes taking platform | 1000+ active users",
       technologies: [
         "Figma",
         "Illustrator",
         "React",
         "TailwindCSS",
         "Shadcn UI",
-        "Supabase",
+        "React Native",
       ],
       role: ["UX Research", "UX/UI Design", "Product Development"],
       links: [
         {
-          type: "Website",
+          type: "Try Zennbox",
           href: "https://zennbox.app",
           icon: <Icons.globe className="size-3" />,
         },
@@ -166,6 +177,31 @@ export const DATA = {
       image:
         "https://res.cloudinary.com/dumzwlckn/image/upload/v1768471881/zennbox_enqpaa.webp",
       video: "",
+    },
+    {
+      title: "CAPES.APP",
+      href: "/projects/capes.app",
+      dates: "March 2025 - ongoing",
+      active: true,
+      description: "E-Store For Creators with 0% Platform Fee",
+      technologies: [
+        "Figma",
+        "Illustrator",
+        "React",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      role: ["UX Research", "UX/UI Design", "Product Development"],
+      links: [
+        {
+          type: "Launch your store",
+          href: "https://capes.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/capes.jpg",
+      video: "",
+      //"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
     {
       title: "Themefy",
@@ -186,7 +222,7 @@ export const DATA = {
       role: ["UX/UI Design", "Product Development"],
       links: [
         {
-          type: "Web Store",
+          type: "Install in your browser",
           href: "https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf",
           icon: <Icons.globe className="size-3" />,
         },
@@ -199,32 +235,7 @@ export const DATA = {
       image: "",
       video: "/cc.mp4", //https://cdn.magicui.design/bento-grid.mp4
     },
-    {
-      title: "CAPES.APP",
-      href: "/projects/capes.app",
-      dates: "March 2025 - ongoing",
-      active: true,
-      description:
-        "Empowering creators and coaches to run and grow their business",
-      technologies: [
-        "Figma",
-        "Illustrator",
-        "React",
-        "TailwindCSS",
-        "Shadcn UI",
-      ],
-      role: ["UX Research", "UX/UI Design", "Product Development"],
-      links: [
-        {
-          type: "Website",
-          href: "https://capes.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/capes.jpg",
-      video: "",
-      //"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
+
     {
       title: "Move Together",
       href: "/projects/move-together",

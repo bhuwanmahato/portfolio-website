@@ -67,10 +67,10 @@ export function ZenboxContent({ project }: ZenboxContentProps) {
                 <li className="pt-4">
                   <h3 className="text-xl font-bold mb-2">Zennbox</h3>
                   <p className=" text-sm leading-relaxed">
-                    Zennbox is a cross-platform tool for storing and organizing
-                    resources efficiently with advanced note-taking features,
-                    designed to boost productivity and foster a focused,
-                    efficient learning experience.
+                    AI based cross-platform resource management and learning
+                    platform. Collect, save & organize all your files, links,
+                    youtube videos, social media posts and more. Take notes,
+                    document learnings and access them from anywhere.
                   </p>
                 </li>
                 <div className="flex flex-col gap-2 py-2">

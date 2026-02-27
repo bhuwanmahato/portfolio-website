@@ -100,7 +100,7 @@ export default function Page() {
                   Portfolio
                 </h2>
                 <p className="text-muted-foreground text-base lg:text-base/relaxed ">
-                  I&apos;ve worked on a variety of projects, here are few of my
+                  I&apos;ve worked on a lot of cool projects, here are few of my
                   favorites.
                 </p>
               </div>
