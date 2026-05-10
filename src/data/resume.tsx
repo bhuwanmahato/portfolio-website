@@ -11,7 +11,8 @@ export const DATA = {
     "Researcher and Product Designer. I love building things and helping people.",
   summary:
     "I started my career as a [Software Developer](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
-  avatarUrl: "/me.webp",
+  avatarUrl:
+    "https://res.cloudinary.com/dumzwlckn/image/upload/v1778425354/me2_q6bftv.webp",
   skills: [
     "Figma",
     "Adobe Illustrator",
@@ -73,24 +74,13 @@ export const DATA = {
 
   work: [
     {
-      company: "Indian Institute of Technology, Guwahati",
-      href: "https://iitg.ac.in",
-      badges: [],
-      location: "Guwahati, Assam",
-      title: "Research Scholar",
-      logoUrl: "/iitg.png",
-      start: "Jan 2026",
-      end: "Present",
-      description: "",
-    },
-    {
       company: "NavX Energy Private Limited",
       href: "https://navxenergy.com/",
       badges: [],
       location: "Guwahati, Assam",
       title: "Co-Founder",
       logoUrl: "/navxLogo.svg",
-      start: "Jan 2026",
+      start: "Jul 2025",
       end: "Present",
       description: "",
     },
@@ -126,12 +116,20 @@ export const DATA = {
       title: "Web Developer and Designer",
       logoUrl: "/alleviate.png",
       start: "Sep 2018",
-      end: "Nov 2028",
+      end: "Nov 2018",
       description:
         "Was an intern as a web developer and designer for the company 'Alleviate Networks'. I was in the team responsible for designing and developing the official website of the company under my mentor, Mr. Sameer Pandey. Learnt a lot, technically and professionally. Got the insights of working environment, communicating with colleagues, sharing knowledge and insights, overall a healthy experience.",
     },
   ],
   education: [
+    {
+      school: "Indian Institute of Technology, Guwahati",
+      href: "https://iitg.ac.in",
+      degree: "Doctor of Philosophy (PhD)",
+      logoUrl: "/iitg.png",
+      start: "Jan 2026",
+      end: "Present",
+    },
     {
       school: "Indian Institute of Technology, Guwahati",
       href: "https://iitg.ac.in",

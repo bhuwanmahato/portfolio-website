@@ -230,14 +230,7 @@ export default function Page() {
               </h2>
               <p className="mx-auto max-w-[600px] text-sm text-muted-foreground md:text-base/relaxed">
                 If you&apos;d like to collaborate, discuss, debate or just say
-                hi? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can.
+                hi? Just send a dm on linkedin, twitter or email.
               </p>
             </div>
           </BlurFade>
