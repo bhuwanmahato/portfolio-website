@@ -14,7 +14,7 @@ interface ResumeCardProps {
   altText: string;
   title: string;
   subtitle?: string;
-  href?: string;
+  // href?: string;
   badges?: readonly string[];
   period: string;
   description?: string;
@@ -24,14 +24,14 @@ export const ResumeCard = ({
   altText,
   title,
   subtitle,
-  href,
+  // href,
   badges,
   period,
   description,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
     if (description) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
@@ -39,8 +39,8 @@ export const ResumeCard = ({
   };
 
   return (
-    <Link
-      href={href || "#"}
+    <div
+      // href={href || "#"}
       className="block cursor-pointer"
       onClick={handleClick}
     >
@@ -76,7 +76,7 @@ export const ResumeCard = ({
                 <ChevronRightIcon
                   className={cn(
                     "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
+                    isExpanded ? "rotate-90" : "rotate-0",
                   )}
                 />
               </h3>
@@ -98,13 +98,13 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm max-w-[600px]"
             >
               {description}
             </motion.div>
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };

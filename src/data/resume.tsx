@@ -7,24 +7,80 @@ export const DATA = {
   url: "https://bhuwanmahato.com/",
   location: "IIT Guwahati, India",
   locationLink: "https://maps.app.goo.gl/WynXe4XtxaNE9gJV8",
-  description:
-    "Researcher and Product Designer. I love building things and helping people.",
+  description: "Researcher | Design Engineer",
   summary:
-    "I started my career as a [Software Developer](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
+    // "I started my career as a [Software Developer](/#work) and then got my [Master's in Design from IIT Guwahati](/#education) to better understand how to create great user experiences. While studying, [I built and shipped Themefy](https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf), which made me realize how much I enjoy taking an idea and turning it into a finished product.",
+    "I design and build complex products that feel effortless, with deep expertise in user experience, interaction design, and AI. With over [3+ years](/#work) in designing and developing products for both consumers and businesses at WIPRO, Dashverse, and NavX Energy. Previously build and shipped: [Themefy](https://themefy.top), [Zennbox](https://zennbox.app) and [CAPES.APP](https://capes.app).",
   avatarUrl:
     "https://res.cloudinary.com/dumzwlckn/image/upload/v1778425354/me2_q6bftv.webp",
-  skills: [
-    "Figma",
-    "Adobe Illustrator",
+  whatIdo: [
     "Design Research",
-    "Vibe-Coding",
-    "HTML-CSS",
-    "JavaScript",
-    "React",
-    "TailwindCSS",
-    "C++",
-    "C#",
-    "SQL",
+    "Product Design",
+    "UI/UX Design",
+    "Fullstack Development",
+  ],
+  skills: [
+    {
+      name: "Figma",
+      icon: "https://aashish.me/assets/icons/figma.svg",
+    },
+    {
+      name: "Illustrator",
+      icon: "https://cdn.pixabay.com/photo/2021/02/03/12/28/adobe-illustrator-5977785_640.png",
+    },
+    {
+      name: "Design Research",
+      glyph: "DR",
+    },
+    {
+      name: "HTML5",
+      icon: "https://aashish.me/assets/icons/html.webp",
+    },
+    {
+      name: "CSS3",
+      icon: "https://aashish.me/assets/icons/css.webp",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://aashish.me/assets/icons/javascript.svg",
+    },
+    {
+      name: "React",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://aashish.me/assets/icons/tailwind.svg",
+    },
+    {
+      name: "C++",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+    },
+    {
+      name: "C#",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+    },
+    {
+      name: "SQL",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+    },
+
+    {
+      name: "Claude",
+      icon: "https://aashish.me/assets/icons/claudecode.webp",
+    },
+    {
+      name: "Cursor",
+      icon: "https://aashish.me/assets/icons/cursor.svg",
+    },
+    {
+      name: "codex",
+      icon: "https://aashish.me/assets/icons/codex.svg",
+    },
+    {
+      name: "gitbub",
+      icon: "https://aashish.me/assets/icons/github.svg",
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -35,6 +91,13 @@ export const DATA = {
     email: "bhuwan8501@gmail.com",
     tel: "+917632914019",
     social: {
+      email: {
+        name: "Send Email",
+        url: "mailto:bhuwan8501@gmail.com",
+        icon: Icons.email,
+
+        navbar: true,
+      },
       X: {
         name: "X",
         url: "https://x.com/bhuwan_maha",
@@ -62,31 +125,25 @@ export const DATA = {
       //   icon: Icons.youtube,
       //   navbar: true,
       // },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-
-        navbar: false,
-      },
     },
   },
 
   work: [
     {
       company: "NavX Energy Private Limited",
-      href: "https://navxenergy.com/",
+      // href: "https://navxenergy.com/",
       badges: [],
       location: "Guwahati, Assam",
-      title: "Co-Founder",
+      title: "Founding Engineer",
       logoUrl: "/navxLogo.svg",
       start: "Jul 2025",
       end: "Present",
-      description: "",
+      description:
+        "Solo designer responsible for desgining website, pitch deck, marketing assets, etc. Also handled the electronics and electrical design and fabrication.",
     },
     {
       company: "Dashverse India",
-      href: "https://dashverse.ai/",
+      // href: "https://dashverse.ai/",
       badges: [],
       location: "Bengaluru, Karnataka",
       title: "Product Designer",
@@ -98,7 +155,7 @@ export const DATA = {
     },
     {
       company: "Wipro Limited",
-      href: "https://atomic.finance",
+      // href: "https://atomic.finance",
       badges: [],
       location: "Bhubneshwar",
       title: "Software Developer Engineer",
@@ -124,7 +181,7 @@ export const DATA = {
   education: [
     {
       school: "Indian Institute of Technology, Guwahati",
-      href: "https://iitg.ac.in",
+      // href: "",
       degree: "Doctor of Philosophy (PhD)",
       logoUrl: "/iitg.png",
       start: "Jan 2026",
@@ -132,7 +189,7 @@ export const DATA = {
     },
     {
       school: "Indian Institute of Technology, Guwahati",
-      href: "https://iitg.ac.in",
+      // href: "",
       degree: "Master of Design (M.Des)",
       logoUrl: "/iitg.png",
       start: "2023",
@@ -140,7 +197,7 @@ export const DATA = {
     },
     {
       school: "BIT Sindri",
-      href: "https://www.bitsindri.ac.in/",
+      // href: "",
       degree:
         "Bachelor of Technology in Electronics and Communications Engineering (ECE)",
       logoUrl: "/bitsindri.png",
@@ -150,9 +207,35 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Trace UI",
+      href: "https://traceui.dev",
+      dates: "",
+      active: true,
+      description:
+        "Browser based UI components, design system, assets generation and editing tool for designing and developing modern SaaS products.",
+      technologies: [
+        "Figma",
+        "Illustrator",
+        "React",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      role: ["UX Research", "UX/UI Design", "Product Development"],
+      links: [
+        {
+          type: "Start Creating UIs",
+          href: "https://traceui.dev",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dumzwlckn/image/upload/v1790278539/extract_zpxowz.webp",
+      video: "",
+      //"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+    {
       title: "Zennbox",
       href: "/projects/zennbox",
-      dates: "Jul 2025 - Present",
       active: true,
       description:
         "AI powered digital resources management and notes taking platform | 1000+ active users",
@@ -177,9 +260,40 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Themefy",
+      href: "/projects/themefy",
+      active: true,
+      description:
+        "Transfrom your new tab page into a personalized, calming productivity dashboard - Browser Extension | (10$ MRR) | 2000+ active users",
+      technologies: [
+        "Figma",
+        "Illustrator",
+        "Spline",
+        "HTML/CSS",
+        "javascript",
+        "TailwindCSS",
+        "P5.js",
+      ],
+      role: ["UX/UI Design", "Product Development"],
+      links: [
+        {
+          type: "Try Themefy",
+          href: "https://themefy.top",
+          icon: <Icons.globe className="size-3" />,
+        },
+        // {
+        //   type: "Source",
+        //   href: "https://github.com/magicuidesign/magicui",
+        //   icon: <Icons.github className="size-3" />,
+        // },
+      ],
+      image: "",
+      video: "/cc.mp4", //https://cdn.magicui.design/bento-grid.mp4
+    },
+    {
       title: "CAPES.APP",
       href: "/projects/capes.app",
-      dates: "March 2025 - ongoing",
+      dates: "",
       active: true,
       description: "E-Store For Creators with 0% Platform Fee",
       technologies: [
@@ -200,52 +314,6 @@ export const DATA = {
       image: "/capes.jpg",
       video: "",
       //"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
-    {
-      title: "Themefy",
-      href: "/projects/themefy",
-      dates: "Jun 2024 - Jul 2024",
-      active: true,
-      description:
-        "Bringing creative coding to everyday browsing - Browser Extension | (10$ MRR) | 1000+ active users",
-      technologies: [
-        "Figma",
-        "Illustrator",
-        "Spline",
-        "HTML/CSS",
-        "javascript",
-        "TailwindCSS",
-        "P5.js",
-      ],
-      role: ["UX/UI Design", "Product Development"],
-      links: [
-        {
-          type: "Install in your browser",
-          href: "https://chromewebstore.google.com/detail/themefy/pnooehjmfoolleebkoboieekgfgbhjmf",
-          icon: <Icons.globe className="size-3" />,
-        },
-        // {
-        //   type: "Source",
-        //   href: "https://github.com/magicuidesign/magicui",
-        //   icon: <Icons.github className="size-3" />,
-        // },
-      ],
-      image: "",
-      video: "/cc.mp4", //https://cdn.magicui.design/bento-grid.mp4
-    },
-
-    {
-      title: "Move Together",
-      href: "/projects/move-together",
-      dates: "Jan 2024",
-      active: true,
-      description:
-        "A community based group consultation and treatment application which allows users to book group consultations with doctors and specialists.",
-      technologies: ["Figma", "Illustrator"],
-      role: ["UX Research", "UX/UI Design"],
-      links: [],
-      image: "/movetogether.jpg",
-      video: "", //"https://cdn.llm.report/openai-demo.mp4",
     },
   ],
   hackathons: [

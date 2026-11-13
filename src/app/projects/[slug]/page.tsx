@@ -4,7 +4,6 @@ import { ProjectContent } from "@/components/projects/project-content";
 import { ZenboxContent } from "@/components/projects/zenbox-content";
 import { ThemefyContent } from "@/components/projects/themefy-content";
 import { CapesContent } from "@/components/projects/capes-content";
-import { MoveTogetherContent } from "@/components/projects/move-together-content";
 
 export async function generateStaticParams() {
   return DATA.projects.map((project) => ({
@@ -14,7 +13,7 @@ export async function generateStaticParams() {
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = DATA.projects.find(
-    (p) => p.title.toLowerCase().replace(/\s+/g, "-") === params.slug
+    (p) => p.title.toLowerCase().replace(/\s+/g, "-") === params.slug,
   );
 
   if (!project) {
@@ -31,8 +30,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   if (project.title.toLowerCase() === "capes.app") {
     return <CapesContent project={project} />;
   }
-  if (project.title.toLowerCase() === "move together") {
-    return <MoveTogetherContent project={project} />;
+  if (project.title.toLowerCase() === "traceui") {
+    // return <MoveTogetherContent project={project} />;
   }
 
   // Default project content

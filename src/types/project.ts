@@ -9,7 +9,7 @@ export interface ProjectLink {
 export interface Project {
   title: string;
   href: string;
-  dates: string;
+  // dates: string;
   active: boolean;
   description: string;
   technologies: readonly string[];
