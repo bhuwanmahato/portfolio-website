@@ -5,6 +5,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -122,7 +123,14 @@ export default function Page() {
                   >
                     <span className="stack-badge" data-tooltip={skill.name}>
                       {icon ? (
-                        <img src={icon} alt={skill.name} className="image" />
+                        <Image
+                          src={icon}
+                          alt={skill.name}
+                          width={22}
+                          height={22}
+                          className="image"
+                          unoptimized
+                        />
                       ) : (
                         <span className="badge-glyph">
                           {glyph || skill.name.slice(0, 2)}
@@ -146,7 +154,7 @@ export default function Page() {
                   {"//"} featured products
                 </h2>
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  Products I've designed, engineered, and shipped.
+                  Products I&apos;ve designed, engineered, and shipped.
                 </h2>
                 <p className="text-muted-foreground text-base lg:text-base/relaxed ">
                   Product strategy, design, frontend engineering,
@@ -281,7 +289,7 @@ export default function Page() {
                 {"//"} contact
               </h2>
               <h2 className="text-2xl font-bold  sm:text-3xl">
-                Building something? Let's talk.
+                Building something? Let&apos;s talk.
               </h2>
               <p className="mx-auto text-sm text-muted-foreground md:text-base/relaxed">
                 Open to founding design / design engineering roles and
