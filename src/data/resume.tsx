@@ -22,11 +22,11 @@ export const DATA = {
   skills: [
     {
       name: "Figma",
-      icon: "https://aashish.me/assets/icons/figma.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     },
     {
       name: "Illustrator",
-      icon: "https://cdn.pixabay.com/photo/2021/02/03/12/28/adobe-illustrator-5977785_640.png",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg",
     },
     {
       name: "Design Research",
@@ -34,52 +34,51 @@ export const DATA = {
     },
     {
       name: "HTML5",
-      icon: "https://aashish.me/assets/icons/html.webp",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
     },
     {
       name: "CSS3",
-      icon: "https://aashish.me/assets/icons/css.webp",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     },
     {
       name: "JavaScript",
-      icon: "https://aashish.me/assets/icons/javascript.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
       name: "React",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
     {
       name: "Tailwind CSS",
-      icon: "https://aashish.me/assets/icons/tailwind.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
       name: "C++",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
     },
     {
       name: "C#",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
     },
     {
       name: "SQL",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
     },
-
     {
       name: "Claude",
-      icon: "https://aashish.me/assets/icons/claudecode.webp",
+      icon: "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.104.0/icons/claude-color.svg",
     },
     {
       name: "Cursor",
-      icon: "https://aashish.me/assets/icons/cursor.svg",
+      icon: "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.104.0/icons/cursor.svg",
     },
     {
-      name: "codex",
-      icon: "https://aashish.me/assets/icons/codex.svg",
+      name: "Codex",
+      icon: "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.104.0/icons/codex-color.svg",
     },
     {
-      name: "gitbub",
-      icon: "https://aashish.me/assets/icons/github.svg",
+      name: "GitHub",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
     },
   ],
   navbar: [

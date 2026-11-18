@@ -246,6 +246,11 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   display: block;
 }
 
+.dark .stack-badge img[alt="Cursor"],
+.dark .stack-badge img[alt="GitHub"] {
+  filter: invert(1);
+}
+
 .stack-badge .badge-glyph {
   font-family: 'Geist Mono', 'SF Mono', 'JetBrains Mono', monospace;
   font-weight: 600;

@@ -88,12 +88,14 @@ export default function Page() {
             </h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <div className="flex flex-row justify-between">
+            <div className="grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2 md:flex md:flex-row md:justify-between md:gap-6">
               {DATA.whatIdo.map((whatIdo: string, id: number) => (
-                <div className="flex flex-row gap-3 items-center" key={id}>
-                  {" "}
+                <div
+                  className="flex min-w-0 flex-row items-center gap-2.5 text-sm md:gap-3 md:text-base"
+                  key={id}
+                >
                   <i className="location-icon" aria-hidden="true" />
-                  {whatIdo}
+                  <span className="leading-snug">{whatIdo}</span>
                 </div>
               ))}
             </div>
